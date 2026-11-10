@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "RockBurst",
+            "compilerPath": "D:/MyArmGunToolchainArmNoneEabi/bin/arm-none-eabi-gcc.exe",
+            "compileCommands": "${workspaceFolder}/build/current/gcc-arm-robot-android/compile_commands.json",
+            "includePath": [
+                "${workspaceFolder}/Core",
+                "${workspaceFolder}/Fwlib/inc",
+                "${workspaceFolder}/User",
+                "${workspaceFolder}/System",
+                "${workspaceFolder}/Hardware",
+                "${workspaceFolder}/App",
+                "${workspaceFolder}/Network",
+                "${workspaceFolder}/Network/lwip/src/include"
+            ],
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "cStandard": "c99",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

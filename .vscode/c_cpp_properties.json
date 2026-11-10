@@ -1,0 +1,105 @@
+{
+    "configurations": [
+        {
+            "name": "RockBurst Robot PC",
+            "compilerPath": "D:/MyArmGunToolchainArmNoneEabi/bin/arm-none-eabi-gcc.exe",
+            "compileCommands": "${workspaceFolder}/Code/build/gcc-arm-robot-pc/compile_commands.json",
+            "includePath": [
+                "${workspaceFolder}/Code/Core",
+                "${workspaceFolder}/Code/Fwlib/inc",
+                "${workspaceFolder}/Code/User",
+                "${workspaceFolder}/Code/System",
+                "${workspaceFolder}/Code/Hardware",
+                "${workspaceFolder}/Code/App",
+                "${workspaceFolder}/Code/Control",
+                "${workspaceFolder}/Code/Device",
+                "${workspaceFolder}/Code/Robot",
+                "${workspaceFolder}/Code/Test",
+                "${workspaceFolder}/Code/Network",
+                "${workspaceFolder}/Code/Network/lwip/src/include"
+            ],
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "cStandard": "c99",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "RockBurst Robot Android",
+            "compilerPath": "D:/MyArmGunToolchainArmNoneEabi/bin/arm-none-eabi-gcc.exe",
+            "compileCommands": "${workspaceFolder}/Code/build/gcc-arm-robot-android/compile_commands.json",
+            "includePath": [
+                "${workspaceFolder}/Code/Core",
+                "${workspaceFolder}/Code/Fwlib/inc",
+                "${workspaceFolder}/Code/User",
+                "${workspaceFolder}/Code/System",
+                "${workspaceFolder}/Code/Hardware",
+                "${workspaceFolder}/Code/App",
+                "${workspaceFolder}/Code/Control",
+                "${workspaceFolder}/Code/Device",
+                "${workspaceFolder}/Code/Robot",
+                "${workspaceFolder}/Code/Test",
+                "${workspaceFolder}/Code/Network",
+                "${workspaceFolder}/Code/Network/lwip/src/include"
+            ],
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "cStandard": "c99",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "RockBurst Test Web",
+            "compilerPath": "D:/MyArmGunToolchainArmNoneEabi/bin/arm-none-eabi-gcc.exe",
+            "compileCommands": "${workspaceFolder}/Code/build/gcc-arm-test/compile_commands.json",
+            "includePath": [
+                "${workspaceFolder}/Code/Core",
+                "${workspaceFolder}/Code/Fwlib/inc",
+                "${workspaceFolder}/Code/User",
+                "${workspaceFolder}/Code/System",
+                "${workspaceFolder}/Code/Hardware",
+                "${workspaceFolder}/Code/App",
+                "${workspaceFolder}/Code/Control",
+                "${workspaceFolder}/Code/Device",
+                "${workspaceFolder}/Code/Robot",
+                "${workspaceFolder}/Code/Test",
+                "${workspaceFolder}/Code/Network",
+                "${workspaceFolder}/Code/Network/lwip/src/include"
+            ],
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "cStandard": "c99",
+            "cppStandard": "c++17"
+        },
+        {
+            "name": "RockBurst Test Vehicle Light",
+            "compilerPath": "D:/MyArmGunToolchainArmNoneEabi/bin/arm-none-eabi-gcc.exe",
+            "compileCommands": "${workspaceFolder}/Code/build/gcc-arm-test-vehicle-light/compile_commands.json",
+            "includePath": [
+                "${workspaceFolder}/Code/Core",
+                "${workspaceFolder}/Code/Fwlib/inc",
+                "${workspaceFolder}/Code/User",
+                "${workspaceFolder}/Code/System",
+                "${workspaceFolder}/Code/Hardware",
+                "${workspaceFolder}/Code/App",
+                "${workspaceFolder}/Code/Control",
+                "${workspaceFolder}/Code/Device",
+                "${workspaceFolder}/Code/Robot",
+                "${workspaceFolder}/Code/Test",
+                "${workspaceFolder}/Code/Network",
+                "${workspaceFolder}/Code/Network/lwip/src/include"
+            ],
+            "defines": [
+                "STM32F40_41xxx",
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "cStandard": "c99",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

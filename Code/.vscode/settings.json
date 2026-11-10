@@ -1,0 +1,17 @@
+{
+    "cmake.configurePreset": "gcc-arm-robot-android",
+    "cmake.buildPreset": "gcc-arm-robot-android",
+    "C_Cpp.default.compilerPath": "D:/MyArmGunToolchainArmNoneEabi/bin/arm-none-eabi-gcc.exe",
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/build/current/gcc-arm-robot-android/compile_commands.json",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/Core",
+        "${workspaceFolder}/Fwlib/inc",
+        "${workspaceFolder}/User",
+        "${workspaceFolder}/System",
+        "${workspaceFolder}/Hardware"
+    ],
+    "C_Cpp.default.defines": [
+        "STM32F40_41xxx",
+        "USE_STDPERIPH_DRIVER"
+    ]
+}

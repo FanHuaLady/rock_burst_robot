@@ -1,0 +1,15 @@
+Code/build/
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.o
+*.d
+*.crf
+*.axf
+*.uvguix.*
+*.uvgui.*
+*.uvopt*
+*.uvproj.saved_uv4
+Code/Obj/

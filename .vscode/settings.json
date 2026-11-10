@@ -1,0 +1,26 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/Code",
+    "cmake.configureOnOpen": true,
+    "cmake.configurePreset": "gcc-arm-test",
+    "cmake.buildPreset": "gcc-arm-test",
+    "C_Cpp.default.compilerPath": "D:/MyArmGunToolchainArmNoneEabi/bin/arm-none-eabi-gcc.exe",
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/Code/build/gcc-arm-test/compile_commands.json",
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/Code/Core",
+        "${workspaceFolder}/Code/Fwlib/inc",
+        "${workspaceFolder}/Code/User",
+        "${workspaceFolder}/Code/System",
+        "${workspaceFolder}/Code/Hardware",
+        "${workspaceFolder}/Code/App",
+        "${workspaceFolder}/Code/Control",
+        "${workspaceFolder}/Code/Device",
+        "${workspaceFolder}/Code/Robot",
+        "${workspaceFolder}/Code/Test",
+        "${workspaceFolder}/Code/Network",
+        "${workspaceFolder}/Code/Network/lwip/src/include"
+    ],
+    "C_Cpp.default.defines": [
+        "STM32F40_41xxx",
+        "USE_STDPERIPH_DRIVER"
+    ]
+}

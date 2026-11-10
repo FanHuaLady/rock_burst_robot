@@ -1,0 +1,89 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "gcc-arm-robot",
+      "displayName": "RockBurst Robot Firmware",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build/current/gcc-arm-robot",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/cmake/arm-none-eabi.cmake",
+        "CMAKE_BUILD_TYPE": "Debug",
+        "ROCKBURST_APP": "ROBOT",
+        "ROCKBURST_NETWORK_PROFILE": "PC_DIRECT",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    },
+    {
+      "name": "gcc-arm-robot-pc",
+      "displayName": "RockBurst Robot Firmware (PC Direct)",
+      "inherits": "gcc-arm-robot",
+      "binaryDir": "${sourceDir}/build/current/gcc-arm-robot-pc",
+      "cacheVariables": {
+        "ROCKBURST_NETWORK_PROFILE": "PC_DIRECT"
+      }
+    },
+    {
+      "name": "gcc-arm-robot-android",
+      "displayName": "RockBurst Robot Firmware (Android Direct)",
+      "inherits": "gcc-arm-robot",
+      "binaryDir": "${sourceDir}/build/current/gcc-arm-robot-android",
+      "cacheVariables": {
+        "ROCKBURST_NETWORK_PROFILE": "ANDROID_DIRECT"
+      }
+    },
+    {
+      "name": "gcc-arm-test-vehicle-light",
+      "displayName": "Vehicle Light Hardware Test",
+      "inherits": "gcc-arm-robot",
+      "binaryDir": "${sourceDir}/build/current/gcc-arm-test-vehicle-light",
+      "cacheVariables": {
+        "ROCKBURST_APP": "TEST_VEHICLE_LIGHT"
+      }
+    },
+    {
+      "name": "gcc-arm-test-led-blink",
+      "displayName": "LED Hardware Test",
+      "inherits": "gcc-arm-robot",
+      "binaryDir": "${sourceDir}/build/current/gcc-arm-test-led-blink",
+      "cacheVariables": {
+        "ROCKBURST_APP": "TEST_LED_BLINK"
+      }
+    },
+    {
+      "name": "gcc-arm-test-throttle-pwm",
+      "displayName": "Throttle PWM Hardware Test",
+      "inherits": "gcc-arm-robot",
+      "binaryDir": "${sourceDir}/build/current/gcc-arm-test-throttle-pwm",
+      "cacheVariables": {
+        "ROCKBURST_APP": "TEST_THROTTLE_PWM"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "gcc-arm-robot",
+      "configurePreset": "gcc-arm-robot"
+    },
+    {
+      "name": "gcc-arm-robot-pc",
+      "configurePreset": "gcc-arm-robot-pc"
+    },
+    {
+      "name": "gcc-arm-robot-android",
+      "configurePreset": "gcc-arm-robot-android"
+    },
+    {
+      "name": "gcc-arm-test-vehicle-light",
+      "configurePreset": "gcc-arm-test-vehicle-light"
+    },
+    {
+      "name": "gcc-arm-test-led-blink",
+      "configurePreset": "gcc-arm-test-led-blink"
+    },
+    {
+      "name": "gcc-arm-test-throttle-pwm",
+      "configurePreset": "gcc-arm-test-throttle-pwm"
+    }
+  ]
+}
